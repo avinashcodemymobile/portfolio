@@ -13,6 +13,11 @@ body{
     margin-left:35px;
     margin-right: 35px;
 }
+.padding-left{
+    margin-top: 100px;
+    margin-bottom: 35px;
+    
+}
 .full-length-navbar {
     background-image: url('/bg.jpg');
     background-repeat: no-repeat;
@@ -132,20 +137,16 @@ body{
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding: 0px 40px;
     position: relative;
     clear: both;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.container {
-    max-width: 1250px;
+.container { 
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
-    padding: 0px 40px;
+    
     position: relative;
     clear: both;
     -webkit-box-sizing: border-box;
@@ -164,9 +165,315 @@ body{
     background-color: #E3872D;
     top: -35px;
 }
+.info-with-image{
+    display: flex;
+    justify-content: space-around;
+}
 .info-about-me{
     margin-top:40px;
     font-size: 22px;
     margin-left: 25px;
     font-weight: 100;
 }
+.left-image img{
+    height: 450px;;
+    padding-top: 70px;
+    margin-left: 75%;
+}
+.right-about-me{
+    padding-top: 70px;
+    margin-right: 20%;
+    align-content: center;
+    padding-left:330px;
+}
+.detail-about-me{
+    font-size: 16px;
+    line-height: 2;
+    word-spacing: 4px;
+    align-content: center;
+}
+@media (min-width: 1200px){
+.container {
+    width: 1173px;
+    margin-right: 500px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .left-image img{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .padding{
+        margin-top: 0px;
+        margin-left: 9%;
+    }
+    .right-about-me{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        font-size: 10px;
+    }
+    .about_short_contact_wrap{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .buttons_wrap{
+        display: flex;
+        justify-content: center;
+    }
+    .detail-about-me{
+       margin-left: 140px;
+    }
+    .statistics{
+        display: flex;
+        justify-content: center;
+    }
+    .abilities-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+ @media only screen and (max-width:768px) {
+    .left-image img{
+        display: none;
+    }
+    .right-about-me{
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 0;
+    } 
+    .about_short_contact_wrap{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .buttons_wrap{
+        display: flex;
+        justify-content: center;
+    }
+    .container{
+        display: none;
+    }
+    .abilities-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+    .about_short_contact_wrap{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 16px;
+        list-style-type: none;
+    }
+    .display-inline span label{
+       margin-right:20px;
+    }
+
+    .about_short_contact_wrap ul li {
+        margin: 0px 14px 11px 10px;
+        width: 69%;
+        float: left;
+    }
+    .gap-between{
+        margin-left: 15px;
+    }
+    .buttons_wrap {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+        padding-left: 120px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .buttons_wrap ul {
+        margin: 0px;
+        list-style-type: none;
+    }
+   .buttons_wrap ul li {
+        margin: 0px 30px 10px 0px;
+        float: left;
+    }
+    .buttons_wrap ul li a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #E3872D;
+        font-weight: 600;
+        font-family: "Montserrat";
+        padding: 12px 35px;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+    }
+    .buttons_wrap ul li a:before {
+        position: absolute;
+        content: "";
+        top: 0px;
+        height: 100%;
+        left: -25%;
+        width: 0%;
+        background-color: #041230;
+        transform: skew(50deg);
+        transition-duration: .6s;
+        z-index: 1;
+    }
+    .buttons_wrap ul li a span {
+        position: relative;
+        z-index: 2;
+    }
+    .abilities-section{
+        display: flex;
+        justify-content: center;
+        background-color: #f6f7fd;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 35px;
+
+    }
+    .abilities{
+        width:25%;
+        justify-content: center;
+    }
+    .wrapper{
+        width: 400px;
+        font-family: 'Roboto', sans-serif;
+	margin:0 auto;
+    }
+    .skill {
+        margin-bottom: 35px;
+        position: relative;
+			overflow-x:hidden;
+			
+    }
+    .skill > p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #1a1716;
+        margin: 0;
+    }
+    .skill:before{
+        width: 100%;
+        height: 5px;
+        content: "";
+        display: block;
+        position: absolute;
+        background: #959595;
+        bottom: 0;
+    }
+    .skill-bar {
+        width: 100%;
+        height: 5px;
+        background:#f4392f;
+        display: block;
+        position: relative;
+    }
+
+
+    .skill1{
+        width: 95%;
+			
+    }
+    .skill-bar span{
+        position: absolute;
+        border-top: 5px solid #f4392f;
+        top: -30px;
+        padding: 0;
+        font-size: 18px;
+        padding: 3px 0;
+        font-weight: 500;
+    }
+    .skill-bar {
+        position: relative;
+			
+    }
+
+    .skill1 .skill-count1 {
+        right: 0;
+    }
+    .skill2{
+        width: 85%;
+    }
+
+    .skill2 .skill-count2 {
+        right: 0;
+    }
+
+    .skill3{
+        width: 75%;
+    }
+    .skill3 .skill-count3 {
+        right: 0;
+    }
+    .skill4{
+        width: 65%
+    }
+
+    .skill4 .skill-count4 {
+        right: 0;
+    }
+
+    .skill5{
+        width: 80%;
+    }
+
+    .skill5 .skill-count5 {
+        right: 0;
+    }
+
+    .skill6{
+        width: 90%
+    }
+
+    .skill6 .skill-count6 {
+        right: 0;
+    }
+
+.github-source{
+	float:right;
+	display:block;
+	color:#fff;
+	margin:0 20px;
+	position: relative;
+	z-index:999999;
+	top:0;
+}
+.github-source i{
+	font-size:50px;
+	color:#000
+}
+.bar {
+    width: 100%;
+    height: 9px;
+    margin-bottom: 15px;
+      background-color: #FFF;
+    }
+  .bar-inner {
+    width: 0%;
+    height: 100%;
+    position: relative;
+      background-color: black;
+    transition: width 3000ms linear;
+  }
+  .bar-inner:after {
+      color: black;
+      line-height: 40px;
+    content: attr(data-percent);
+      position: absolute;
+    right: 2.5%;
+  }
+  .statistics{
+      width:35%;
+      margin-left: 30px;
+      margin-top:25px;
+  }
